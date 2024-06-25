@@ -1,0 +1,180 @@
+.aboutContainer {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 50%,
+    blue 50%,
+    rgb(54, 54, 255) 100%
+  );
+  box-sizing: border-box;
+  text-align: center;
+}
+.aboutBox {
+  height: 80vh;
+  width: 70vw;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+.aboutBoxInside {
+  height: 100%;
+  width: 100%;
+}
+.headingAbout {
+  color: rgb(255, 38, 0);
+  font: 300 3vmax "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+.aboutContent {
+  height: 80%;
+  display: flex;
+}
+
+.aboutLeft {
+  border-right: 0.5px solid black;
+}
+.aboutLeft {
+  padding: 2vmax;
+  gap: 1vmax;
+  margin: 4vmax 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutLeft img {
+  height: 10vmax;
+  width: 10vmax;
+  object-fit: contain;
+  background-color: black;
+  border-radius: 100%;
+}
+.aboutLeft p {
+  font: 300 1vmax "Roboto";
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.aboutLeft a {
+  padding: 1vmax 2vmax;
+  color: #d62976;
+  font: 400 1vmax "Roboto";
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.aboutLeft a:hover {
+  background-color: rgba(0, 0, 0, 0.263);
+}
+.name {
+  text-transform: capitalize;
+  font: 300 1.5vmax "Roboto" !important;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.aboutRight {
+  border-left: 0.5px solid black;
+}
+.aboutRight {
+  padding: 2vmax;
+  gap: 1vmax;
+  margin: 4vmax 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutRight h2 {
+  font: 400 2vmax "Roboto";
+  color: rgba(0, 0, 0, 0.8);
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vmax;
+}
+.aboutRight svg {
+  font-size: 3vmax;
+}
+.youtube {
+  color: rgb(205, 32, 31);
+}
+.instagram {
+  color: #d62976;
+}
+
+.aboutRight svg:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+}
+
+@media screen and (max-width: 700px) {
+  .aboutBox {
+    height: 60vh;
+    width: 80vw;
+    top: 20vh;
+    left: 10vw;
+  }
+
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headingAbout {
+    font: 300 3vmax "Roboto";
+    height: auto;
+    margin: 2vmax 0;
+  }
+  .aboutContent {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+  .aboutLeft,
+  .aboutRight {
+    border: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    gap: 2vmax;
+  }
+  .aboutLeft p {
+    font: 300 1.5vmax "Roboto";
+  }
+  .aboutLeft a {
+    font: 400 1.8vmax "Roboto";
+  }
+  .name {
+    font: 300 2vmax "Roboto" !important;
+  }
+  .aboutRight h2 {
+    font: 400 2vmax "Roboto";
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutRight svg {
+    font-size: 3vmax;
+  }
+  .youtube {
+    color: rgb(205, 32, 31);
+  }
+  .instagram {
+    color: #d62976;
+  }
+
+  .aboutRight svg:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+  }
+}

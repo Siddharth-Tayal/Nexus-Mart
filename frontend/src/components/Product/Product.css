@@ -1,0 +1,71 @@
+.productHeading {
+  margin: 2vmax auto;
+  width: 30vmax;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.238);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  padding: 3vmax;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5vmax;
+  min-height: 30vh;
+}
+
+.filterBox {
+  width: 10vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 4vmax;
+}
+.categoryBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.category-link {
+  list-style: none;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 0.8vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.category-link:hover {
+  color: tomato;
+}
+
+.filterBox > fieldset {
+  width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .products {
+    min-height: auto;
+  }
+  .filterBox > fieldset {
+    width: 100%;
+  }
+  .categoryBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .category-link {
+    font-size: 1.3vmax;
+  }
+}

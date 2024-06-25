@@ -1,0 +1,21 @@
+.notFound {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vmax;
+  background-color: white;
+  color: tomato;
+}
+.notFound svg {
+  font-size: 10vmax;
+  color: red;
+}
+.notFound h1 {
+  font: 500 3vmax "Roboto";
+}

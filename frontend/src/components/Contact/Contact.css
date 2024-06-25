@@ -1,0 +1,27 @@
+.contact {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.contact a {
+  padding: 1vmax 2vmax;
+  width: 80%;
+  text-align: center;
+  font: 400 3vmax "Roboto";
+  text-decoration: none;
+  border-radius: 8px;
+  color: rgba(213, 62, 35, 0.888);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.contact a:hover {
+  color: white;
+  background-color: tomato;
+}

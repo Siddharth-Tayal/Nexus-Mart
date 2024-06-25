@@ -1,0 +1,19 @@
+.loading {
+  background-color: white;
+  height: 70vh;
+  width: 100vw;
+}
+.load {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  border-bottom: 7px solid tomato;
+  animation: load 0.5s infinite linear;
+  margin: auto;
+  margin-top: 30vh;
+}
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}

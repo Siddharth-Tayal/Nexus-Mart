@@ -1,0 +1,108 @@
+.greenColor {
+  color: green;
+}
+.redColor {
+  color: red;
+}
+.orderDetailPage {
+  background-color: white;
+  overflow-x: hidden;
+}
+.orderDetailContainer {
+  padding: 5vmax;
+  padding-bottom: 0;
+}
+.orderDetailContainer > h1 {
+  font: 300 3vmax cursive;
+  width: fit-content;
+  margin: 4vmax auto;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1vmax;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+.orderDetailContainer > p {
+  font: 400 1.8vmax "Roboto";
+}
+.orderDetailContainerBox,
+.orderDetailCartItemsContainer {
+  margin: 2vmax;
+}
+
+.orderDetailContainerBox > div {
+  display: flex;
+  margin: 1vmax 0;
+}
+.orderDetailContainerBox > div > p {
+  font: 400 1vmax "Roboto";
+  text-transform: capitalize;
+  color: black;
+}
+.orderDetailContainerBox > div > span {
+  margin: 0 1vmax;
+  font: 100 1vmax cursive;
+  color: #575757;
+}
+.orderDetailsCartItem > p {
+  font: 400 1.8vmax "Roboto";
+}
+.orderDetailsCartItem {
+  padding: 2vmax 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.orderDetailCartItemsContainer > div {
+  font: 400 1vmax "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2vmax 0;
+}
+
+.orderDetailCartItemsContainer > div > img {
+  width: 3vmax;
+}
+.orderDetailCartItemsContainer > div > a {
+  color: #575757;
+  margin: 0 2vmax;
+  width: 60%;
+  text-decoration: none;
+}
+.orderDetailCartItemsContainer > div > span {
+  font: 100 1vmax "Roboto";
+  color: #5e5e5e;
+}
+@media screen and (max-width: 600px) {
+  .orderDetailContainer > h1 {
+    font: 400 5vw cursive;
+  }
+  .orderDetailContainer > p {
+    font: 400 6vw cursive;
+  }
+  .orderDetailContainerBox > div {
+    margin: 6vw 0;
+  }
+  .orderDetailContainerBox > div > p {
+    font: 400 4vw "Robot";
+  }
+  .orderDetailContainerBox > div > span {
+    font: 100 4vw cursive;
+  }
+  .orderDetailsCartItem > p {
+    font: 400 4vw "Roboto";
+    margin: 4vw 0;
+  }
+  .orderDetailCartItemsContainer > div {
+    font: 400 4vw "Roboto";
+    margin: 4vw 0;
+  }
+  .orderDetailCartItemsContainer > div > img {
+    width: 10vw;
+  }
+  .orderDetailCartItemsContainer > div > a {
+    margin: 2vw;
+    width: 30%;
+  }
+  .orderDetailCartItemsContainer > div > span {
+    font: 100 4vw "Roboto";
+  }
+}
